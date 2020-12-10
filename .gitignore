@@ -103,4 +103,4 @@ ENV/
 # pycharm
 .idea
 data/
-*.pth
+_logs/sample/coil_icra/checkpoints/
