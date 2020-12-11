@@ -77,7 +77,7 @@ class CoILICRA(nn.Module):
          )
 
         self.speed_branch = FC(params={'neurons': [params['join']['fc']['neurons'][-1]] +
-                                                  params['speed_branch']['fc']['neurons'] + [1],
+                                                  params['speed_branch']['fc']['neurons'] + [4],
                                        'dropouts': params['speed_branch']['fc']['dropouts'] + [0.0],
                                        'end_layer': True})
 
@@ -120,6 +120,7 @@ class CoILICRA(nn.Module):
         speed_branch_output = self.speed_branch(x)
 
         # We concatenate speed with the rest.
+        # [4, 120, 3] + [120, 1]
         return branch_outputs + [speed_branch_output]
 
     def forward_branch(self, x, a, branch_number):

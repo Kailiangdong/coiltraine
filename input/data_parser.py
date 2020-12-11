@@ -34,7 +34,18 @@ def get_speed(measurement_data):
         return forward_speed(measurement_data)
     else:  # There is no speed key, probably speed is zero.
         return 0
+def get_acceleration(measurement_data, measurement):
+    """ Extract the proper speed from the measurement data dict """
 
+    # If the forward speed is not on the dataset it is because speed is zero.
+    if 'playerMeasurements' in measurement_data and \
+        'acceleration' in measurement_data['playerMeasurements']:
+        if('z' in measurement_data['playerMeasurements']['acceleration']):
+            return [measurement_data['playerMeasurements']['acceleration']['x'], measurement_data['playerMeasurements']['acceleration']['y'],measurement_data['playerMeasurements']['acceleration']['z']]
+        else:
+            return [measurement_data['playerMeasurements']['acceleration']['x'], measurement_data['playerMeasurements']['acceleration']['y'],0]
+    else:  # There is no speed key, probably speed is zero.
+        return [0,0,0]
 
 def check_available_measurements(episode):
     """ Try to automatically check the measurements

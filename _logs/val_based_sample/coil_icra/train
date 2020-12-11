@@ -1,0 +1,3 @@
+{"Loading": {"ProcessName": "CoILTrain_coil-icra_8conv_lowdropout_single_control_balancesteer_L1_noise_all_6_None_50hours", "FullConfiguration": "CoILTraindict"}}
+{"Loading": {"GPU": "0"}}
+{"Error": {"Message": "Something Happened"}}

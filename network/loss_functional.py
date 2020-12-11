@@ -145,7 +145,9 @@ def l1_loss(params):
                                  * params['branch_weights'][i])
     """ The last branch is a speed branch"""
     # TODO: Activate or deactivate speed branch loss
-    loss_branches_vec.append(torch.abs(params['branches'][-1] - params['inputs'])
-                             * params['branch_weights'][-1])
+    batch_m_loss = torch.abs(params['branches'][-1] - params['inputs'])
+    weighted_sum_batch_m_loss = torch.sum(batch_m_loss[:,0]* params['branch_weights'][4]) + torch.sum(batch_m_loss[:][1]** params['branch_weights'][5]) + torch.sum(batch_m_loss[:][2]** params['branch_weights'][6]) + torch.sum(batch_m_loss[:][3]** params['branch_weights'][7])
+    loss_branches_vec.append(weighted_sum_batch_m_loss)
+
     return loss_branches_vec, {}
 
