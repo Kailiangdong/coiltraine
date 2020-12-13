@@ -1,0 +1,86 @@
+/home/destiny6303/Documents/code/coiltraine/logger/monitorer.py:120: UserWarning: loadtxt: Empty input file: "<_io.BufferedReader name='_logs/sample/coil_icra/drive_TestT1_Town01_csv/control_output_.csv'>"
+  delimiter=",", skiprows=1)
+ERROR:root:(127.0.0.1:43811) connection closed
+ERROR:root:(127.0.0.1:43811) connection closed
+ERROR:root:(127.0.0.1:43811) connection closed
+ERROR:root:(127.0.0.1:43811) connection closed
+ERROR:root:(127.0.0.1:43811) connection closed
+ERROR:root:(127.0.0.1:43811) connection closed
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Agent': "tensor(-0.2958, device='cuda:0', grad_fn=<SelectBackward>)", 'Checkpoint': 2000}}
+/home/destiny6303/Documents/code/coiltraine/carla08/driving_benchmark/metrics.py:340: RuntimeWarning: invalid value encountered in true_divide
+  experiment_results_matrix[:, header.index('number_red_lights')]))).tolist()
+/home/destiny6303/anaconda3/envs/coiltraine/lib/python3.5/site-packages/skimage/transform/_warps.py:84: UserWarning: The default mode, 'constant', will be changed to 'reflect' in skimage 0.15.
+  warn("The default mode, 'constant', will be changed to 'reflect' in "
+INFO:coil_icra_drive_TestT1_Town01:{'Loading': {'CARLA': '/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=34901'}}
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Checkpoint': 4000}}
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+ERROR:root:(127.0.0.1:34901) connection closed
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Agent': "tensor(-0.1903, device='cuda:0', grad_fn=<SelectBackward>)", 'Checkpoint': 4000}}
+/home/destiny6303/Documents/code/coiltraine/carla08/driving_benchmark/metrics.py:340: RuntimeWarning: invalid value encountered in true_divide
+  experiment_results_matrix[:, header.index('number_red_lights')]))).tolist()
+/home/destiny6303/anaconda3/envs/coiltraine/lib/python3.5/site-packages/skimage/transform/_warps.py:84: UserWarning: The default mode, 'constant', will be changed to 'reflect' in skimage 0.15.
+  warn("The default mode, 'constant', will be changed to 'reflect' in "
+INFO:coil_icra_drive_TestT1_Town01:{'Loading': {'CARLA': '/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=41341'}}
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Checkpoint': 6000}}
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+ERROR:root:(127.0.0.1:41341) connection closed
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Agent': "tensor(-0.0178, device='cuda:0', grad_fn=<SelectBackward>)", 'Checkpoint': 6000}}
+/home/destiny6303/Documents/code/coiltraine/carla08/driving_benchmark/metrics.py:340: RuntimeWarning: invalid value encountered in true_divide
+  experiment_results_matrix[:, header.index('number_red_lights')]))).tolist()
+/home/destiny6303/anaconda3/envs/coiltraine/lib/python3.5/site-packages/skimage/transform/_warps.py:84: UserWarning: The default mode, 'constant', will be changed to 'reflect' in skimage 0.15.
+  warn("The default mode, 'constant', will be changed to 'reflect' in "
+INFO:coil_icra_drive_TestT1_Town01:{'Loading': {'CARLA': '/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=36373'}}
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Checkpoint': 8000}}
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+ERROR:root:(127.0.0.1:36373) connection closed
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Agent': "tensor(-0.3052, device='cuda:0', grad_fn=<SelectBackward>)", 'Checkpoint': 8000}}
+/home/destiny6303/Documents/code/coiltraine/carla08/driving_benchmark/metrics.py:340: RuntimeWarning: invalid value encountered in true_divide
+  experiment_results_matrix[:, header.index('number_red_lights')]))).tolist()
+/home/destiny6303/anaconda3/envs/coiltraine/lib/python3.5/site-packages/skimage/transform/_warps.py:84: UserWarning: The default mode, 'constant', will be changed to 'reflect' in skimage 0.15.
+  warn("The default mode, 'constant', will be changed to 'reflect' in "
+INFO:coil_icra_drive_TestT1_Town01:{'Loading': {'CARLA': '/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=50807'}}
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Checkpoint': 10000}}
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+ERROR:root:(127.0.0.1:50807) connection closed
+INFO:coil_icra_drive_TestT1_Town01:{'Iterating': {'Agent': "tensor(-0.2951, device='cuda:0', grad_fn=<SelectBackward>)", 'Checkpoint': 10000}}
+/home/destiny6303/Documents/code/coiltraine/carla08/driving_benchmark/metrics.py:340: RuntimeWarning: invalid value encountered in true_divide
+  experiment_results_matrix[:, header.index('number_red_lights')]))).tolist()
+/home/destiny6303/anaconda3/envs/coiltraine/lib/python3.5/site-packages/skimage/transform/_warps.py:84: UserWarning: The default mode, 'constant', will be changed to 'reflect' in skimage 0.15.
+  warn("The default mode, 'constant', will be changed to 'reflect' in "
+INFO:coil_icra_drive_TestT1_Town01:{'Finished': {}}

@@ -1,0 +1,18 @@
+{"Loading": {"FullConfiguration": "CoILTraindict", "ProcessName": "CoILTrain_coil-icra_8conv_lowdropout_single_control_balancesteer_L1_noise_all_6_None_50hours"}}
+{"Loading": {"Poses": [[36, 40], [39, 35]]}}
+{"Loading": {"CARLA": "/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=43811"}}
+{"Iterating": {"Checkpoint": 2000}}
+{"Iterating": {"Agent": "tensor(-0.2958, device='cuda:0', grad_fn=<SelectBackward>)", "Checkpoint": 2000}}
+{"Loading": {"CARLA": "/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=34901"}}
+{"Iterating": {"Checkpoint": 4000}}
+{"Iterating": {"Agent": "tensor(-0.1903, device='cuda:0', grad_fn=<SelectBackward>)", "Checkpoint": 4000}}
+{"Loading": {"CARLA": "/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=41341"}}
+{"Iterating": {"Checkpoint": 6000}}
+{"Iterating": {"Agent": "tensor(-0.0178, device='cuda:0', grad_fn=<SelectBackward>)", "Checkpoint": 6000}}
+{"Loading": {"CARLA": "/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=36373"}}
+{"Iterating": {"Checkpoint": 8000}}
+{"Iterating": {"Agent": "tensor(-0.3052, device='cuda:0', grad_fn=<SelectBackward>)", "Checkpoint": 8000}}
+{"Loading": {"CARLA": "/CarlaUE4/Binaries/Linux/CarlaUE4-windowed-benchmark-fps=10-world-port=50807"}}
+{"Iterating": {"Checkpoint": 10000}}
+{"Iterating": {"Agent": "tensor(-0.2951, device='cuda:0', grad_fn=<SelectBackward>)", "Checkpoint": 10000}}
+{"Finished": {}}

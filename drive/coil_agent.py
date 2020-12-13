@@ -70,10 +70,11 @@ class CoILAgent(object):
 
         # Take the forward speed and normalize it for it to go from 0-1
         norm_speed = measurements.player_measurements.forward_speed / g_conf.SPEED_FACTOR
-        norm_speed = torch.cuda.FloatTensor([norm_speed]).unsqueeze(0)
+        acceleration = [measurements.player_measurements.acceleration.x, measurements.player_measurements.acceleration.y, measurements.player_measurements.acceleration.z]
+        norm_speed_acc = torch.cuda.FloatTensor([norm_speed, acceleration[0], acceleration[1], acceleration[2]]).unsqueeze(0)
         directions_tensor = torch.cuda.LongTensor([directions])
         # Compute the forward pass processing the sensors got from CARLA.
-        model_outputs = self._model.forward_branch(self._process_sensors(sensor_data), norm_speed,
+        model_outputs = self._model.forward_branch(self._process_sensors(sensor_data), norm_speed_acc,
                                                   directions_tensor)
 
         steer, throttle, brake = self._process_model_outputs(model_outputs[0])
