@@ -1,3 +1,0 @@
-number_green_lights,exp_id,final_time,rep,result,final_distance,end_other_collision,number_red_lights,end_vehicle_collision,start_point,end_point,end_pedestrian_collision,initial_distance,time_out,weather
-0,0,36.6166,0,0,71.32006835957448,0,0,0,36,40,0,71.31999969482439,36.6166,1
-0,0,36.6166,0,0,71.32001876840084,0,0,0,39,35,0,71.31999588012711,36.6166,1

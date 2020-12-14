@@ -53,9 +53,10 @@ def branched_loss(loss_function, params):
     loss_function = loss_branches_vec[0] + loss_branches_vec[1] + loss_branches_vec[2] + \
                     loss_branches_vec[3]
 
-    measurement_loss = loss_branches_vec[4]/(params['branches'][0].shape[0])
+    measurement_loss = loss_branches_vec[4]
     return torch.sum(loss_function) / (params['branches'][0].shape[0])\
                 + measurement_loss / (params['branches'][0].shape[0]),\
+                torch.sum(loss_function) / (params['branches'][0].shape[0]),\
            plotable_params
 
 
