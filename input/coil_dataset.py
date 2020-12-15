@@ -141,7 +141,7 @@ class CoILDataset(Dataset):
         # If the measurement data is not removable is because it is part of this experiment dataa
         return not self._check_remove_function(measurement_data, self._remove_params)
 
-    def _get_final_measurement(self, speed, accelerations, measurement_data, angle,
+    def _get_final_measurement(self, speed, intentions, measurement_data, angle,
                                directions, avaliable_measurements_dict):
         """
         Function to load the measurement with a certain angle and augmented direction.
@@ -174,9 +174,9 @@ class CoILDataset(Dataset):
         final_measurement.update({'speed_module': speed / g_conf.SPEED_FACTOR})
         final_measurement.update({'directions': directions})
         final_measurement.update({'game_time': time_stamp})
-        final_measurement.update({'accelerationX': accelerations[0]})
-        final_measurement.update({'accelerationY': accelerations[1]})
-        final_measurement.update({'accelerationZ': accelerations[2]})
+        final_measurement.update({'stop_pedestrian': intentions[0]})
+        final_measurement.update({'stop_traffic_lights': intentions[1]})
+        final_measurement.update({'stop_vehicle': intentions[2]})
         
         return final_measurement
 
@@ -241,10 +241,11 @@ class CoILDataset(Dataset):
                 # We extract the interesting subset from the measurement dict
 
                 speed = data_parser.get_speed(measurement_data)
-                accelerations = data_parser.get_acceleration(measurement_data, measurement)
+                # accelerations = data_parser.get_acceleration(measurement_data, measurement)
+                intentions = data_parser.get_intention(measurement_data, measurement)
 
                 directions = measurement_data['directions']
-                final_measurement = self._get_final_measurement(speed, accelerations, measurement_data, 0,
+                final_measurement = self._get_final_measurement(speed, intentions, measurement_data, 0,
                                                                 directions,
                                                                 available_measurements_dict)
 
@@ -259,7 +260,7 @@ class CoILDataset(Dataset):
 
                 # We extract the interesting subset from the measurement dict
 
-                final_measurement = self._get_final_measurement(speed, accelerations, measurement_data, -30.0,
+                final_measurement = self._get_final_measurement(speed, intentions, measurement_data, -30.0,
                                                                 directions,
                                                                 available_measurements_dict)
 
@@ -271,7 +272,7 @@ class CoILDataset(Dataset):
 
                 # We do measurements augmentation for the right side cameras
 
-                final_measurement = self._get_final_measurement(speed, accelerations, measurement_data, 30.0,
+                final_measurement = self._get_final_measurement(speed, intentions, measurement_data, 30.0,
                                                                 directions,
                                                                 available_measurements_dict)
 
